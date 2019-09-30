@@ -1,0 +1,69 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Differentiator (3.1.0)
+  - FakeFisher (0.1.5)
+  - MJRefresh (3.2.0)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
+  - Result (4.1.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
+  - Toast-Swift (5.0.0)
+  - URLNavigator (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.0)
+  - FakeFisher (= 0.1.5)
+  - MJRefresh (~> 3.2)
+  - Moya/RxSwift (~> 13.0.1)
+  - "NSObject+Rx (~> 4.4.1)"
+  - RxCocoa (~> 4.5.0)
+  - RxDataSources (~> 3.1.0)
+  - RxSwift (~> 4.5.0)
+  - Toast-Swift (~> 5.0.0)
+  - URLNavigator (~> 2.2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Differentiator
+    - MJRefresh
+    - Moya
+    - "NSObject+Rx"
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - Toast-Swift
+    - URLNavigator
+  https://github.com/wulaitianc/FakeFisher-Specs:
+    - FakeFisher
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  FakeFisher: c9d29886fee9ef5a8b64ab779d38961996ff452e
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+  URLNavigator: 0bffc3efdeb2d97f7b5eec7ac82d290f4a099431
+
+PODFILE CHECKSUM: e7ce6603bce8f2a65ab62bd584ef6efcbe16046b
+
+COCOAPODS: 1.8.0
