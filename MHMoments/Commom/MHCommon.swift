@@ -18,4 +18,5 @@ struct MHDefaultRatio {
 
 struct MHTweetStatics {
     static let tweetsCountInOnePage = 5
+    static let tweetsInOneRow = 3
 }

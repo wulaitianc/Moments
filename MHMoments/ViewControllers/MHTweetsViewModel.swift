@@ -26,17 +26,12 @@ class MHTweetsViewModel {
     
     func doLogin() -> Observable<MHUserInfoModel> {
         return Observable.create({observer -> Disposable in
-            MHNetWorkManager.shared.sendRequest(provider: TWApiProvider,
-                                          target: TWAPI.login)
-            .subscribe(onNext: {[weak self] response in
+            let observable: Observable<MHUserInfoModel> = MHNetWorkManager.shared.sendRequest(TWAPI.login)
+            return observable
+                .subscribe(onNext: {[weak self] (model) in
                 guard let self = self else {return}
-                do {
-                    let object = try JSONDecoder().decode(MHUserInfoModel.self, from: response.data)
-                    observer.onNext(object)
+                    observer.onNext(model)
                     self.getTweets()
-                } catch  {
-                    observer.onError(error)
-                }
             },
                        onError: {error in
                         observer.onError(error)
@@ -54,8 +49,8 @@ class MHTweetsViewModel {
         fetchMoreTweets()
     }
     
-    /// load next page tweets
-    /// return: whether tweets are all loaded
+    /// description: load next page tweets
+    /// return: whether all tweets are loaded
     @discardableResult
     func fetchMoreTweets() -> Bool {
         if tweetIndex < tweets.count {
@@ -70,20 +65,14 @@ class MHTweetsViewModel {
     //MARK: Private Methods
     private func getTweets() {
         
-            MHNetWorkManager.shared.sendRequest(provider: TWApiProvider,
-                                          target: TWAPI.tweets)
-            .subscribe(onNext: {[weak self] response in
+        let observable: Observable<[MHTweetModel]> = MHNetWorkManager.shared.sendRequest(TWAPI.tweets)
+            observable
+            .subscribe(onNext: {[weak self] object in
                 guard let self = self else {return}
-                do {
-                    let object = try JSONDecoder().decode([MHTweetModel].self, from: response.data)
                     //每一个tweet必须有发送人和图片
                     let tweets = object.filter{$0.sender != nil && ($0.images != nil || $0.content != nil)}
                     self.tweets = self.convertTableDataSource(tweets: tweets)
-//                    self.tweetsSubject.onNext(self.tweets)
                     self.fetchMoreTweets()
-                } catch  {
-                    print(error)
-                }
             },
                        onError: {error in
                         print(error)

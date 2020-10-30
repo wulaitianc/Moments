@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJL-rp-npt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJL-rp-npt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,23 +106,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-mk-eqI" customClass="MHTweetImageContainerView" customModule="MHMoments" customModuleProvider="target">
-                                                    <rect key="frame" x="66" y="15" width="328" height="128"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-mk-eqI" customClass="MHTweetImageContainerView" customModule="MHMoments" customModuleProvider="target">
+                                                    <rect key="frame" x="66" y="15" width="328" height="106"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="R08-wE-SJL"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="G5j-mk-eqI" firstAttribute="top" secondItem="aqd-Xk-bE2" secondAttribute="topMargin" constant="4" id="Uci-e2-l4c"/>
-                                                <constraint firstItem="G5j-mk-eqI" firstAttribute="trailing" secondItem="aqd-Xk-bE2" secondAttribute="trailingMargin" id="YnY-Eg-bjQ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="G5j-mk-eqI" secondAttribute="bottom" constant="5" id="gNQ-k1-4W6"/>
-                                                <constraint firstItem="G5j-mk-eqI" firstAttribute="leading" secondItem="aqd-Xk-bE2" secondAttribute="leadingMargin" constant="46" id="twW-Ag-ohe"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="heightConstraint" destination="R08-wE-SJL" id="86Q-xR-qPs"/>
                                             <outlet property="imagesContainerView" destination="G5j-mk-eqI" id="rzk-4l-klL"/>
                                         </connections>
                                     </tableViewCell>

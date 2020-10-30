@@ -93,8 +93,6 @@ class MHTweetsViewController: UIViewController {
         let width = view.frame.height
         updateHeaderView(width: width)
         
-        tableView.beginUpdates()
-        tableView.endUpdates()
     }
     
     //MARK: update UI
@@ -103,7 +101,7 @@ class MHTweetsViewController: UIViewController {
     }
     
     func configTableView() {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 20
         
         tableView.mj_header = MJRefreshNormalHeader{[weak self] in

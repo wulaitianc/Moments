@@ -10,8 +10,11 @@ import UIKit
 
 class MHTweetImageContainerView: UIView {
     private let gapBetweenImages: CGFloat = 5
-    private let imagesInOneRow = 3
-    
+    private let imagesInOneRow = MHTweetStatics.tweetsInOneRow
+    private var imageWidth: CGFloat{
+        return bounds.width / CGFloat(imagesInOneRow)
+    }
+
     func setImages(_ images:[String]) {
         let imagesToCreate = images.count - subviews.count
         //更新已有的UIImageView
@@ -54,10 +57,7 @@ class MHTweetImageContainerView: UIView {
         }
     }
     
-    var imageWidth: CGFloat{
-        return (UIScreen.main.bounds.width - 86 - gapBetweenImages * CGFloat(imagesInOneRow - 1)) / CGFloat(imagesInOneRow)
-    }
-    
+    /*
     var contentHeight: CGFloat{
         var imagesShown = 0
         for i in 0 ..< subviews.count {
@@ -71,5 +71,5 @@ class MHTweetImageContainerView: UIView {
         
         return CGFloat(roundf(Float(CGFloat(rows) * imageWidth + CGFloat(rows - 1) * gapBetweenImages)))
     }
-
+*/
 }

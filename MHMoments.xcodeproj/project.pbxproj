@@ -144,12 +144,12 @@
 		4A5DE7BE233DB1BA009C67BC /* MHMoments */ = {
 			isa = PBXGroup;
 			children = (
-				4A5DE7ED233DB1FE009C67BC /* API */,
-				4A5DE7FC233DB1FF009C67BC /* View */,
-				4A5DE7F0233DB1FF009C67BC /* Commom */,
 				4A5DE7FD233DB1FF009C67BC /* ViewControllers */,
-				4A5DE7F3233DB1FF009C67BC /* Extensions */,
+				4A5DE7FC233DB1FF009C67BC /* View */,
 				4A5DE7F6233DB1FF009C67BC /* Model */,
+				4A5DE7ED233DB1FE009C67BC /* API */,
+				4A5DE7F0233DB1FF009C67BC /* Commom */,
+				4A5DE7F3233DB1FF009C67BC /* Extensions */,
 				4A5DE7F8233DB1FF009C67BC /* Navigator */,
 				4A5DE7FA233DB1FF009C67BC /* Services */,
 				4A5DE7BF233DB1BA009C67BC /* AppDelegate.swift */,
@@ -719,7 +719,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHMoments/MHMoments-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -738,7 +738,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.com.MHMoments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHMoments/MHMoments-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

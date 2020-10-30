@@ -10,7 +10,6 @@ import Foundation
 import Moya
 import Alamofire
 
-let TWApiProvider = MoyaProvider<TWAPI>()
 
 enum TWAPI {
     case login
