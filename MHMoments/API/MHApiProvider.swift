@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Alamofire
 
 
 enum TWAPI {
@@ -30,7 +29,7 @@ extension TWAPI: TargetType{
         
     }
     
-    var method: Alamofire.HTTPMethod {
+    var method: Moya.Method {
         switch self {
         case .login: fallthrough
         case .tweets: return .get
@@ -38,7 +37,7 @@ extension TWAPI: TargetType{
     }
     
     var sampleData: Data {
-        return "".data(using: .utf8)!
+        return Data()
     }
     
     var task: Task {

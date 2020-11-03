@@ -22,7 +22,7 @@ class MHTweetContentCellTableViewCell: UITableViewCell {
     func bindData(_ model: MHTweetModel, delegate: MHTweetCellShowUserProtocol) {
         userNameButton.setTitle(model.sender?.username, for: .normal)
         contentLabel.text = model.content
-        avatarImageView.ff.setImage(urlString: model.sender?.avatar ?? "")
+        avatarImageView.ff.setImage(urlString: model.sender?.avatar ?? "", placeholder: MHDefaultImage.placeholder)
         
         self.model = model
         self.delegate = delegate

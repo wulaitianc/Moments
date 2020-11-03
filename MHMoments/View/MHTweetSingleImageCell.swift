@@ -15,7 +15,7 @@ class MHTweetSingleImageCell: UITableViewCell {
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
     
     func bindData(_ model: MHTweetModel.Image) {
-        singleImageView.ff.setImage(urlString: model.url){[weak self] result in
+        singleImageView.ff.setImage(urlString: model.url, placeholder: MHDefaultImage.placeholder){[weak self] result in
             guard let self = self else{return}
             switch result {
             case .success(let image):

@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.9.0)
   - Differentiator (3.1.0)
-  - FakeFisher (0.1.5)
+  - FakeFisher (0.2.2)
   - MJRefresh (3.2.0)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
@@ -24,7 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.0)
-  - FakeFisher (= 0.1.5)
+  - FakeFisher (= 0.2.2)
   - MJRefresh (~> 3.2)
   - Moya/RxSwift (~> 13.0.1)
   - "NSObject+Rx (~> 4.4.1)"
@@ -53,7 +53,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  FakeFisher: c9d29886fee9ef5a8b64ab779d38961996ff452e
+  FakeFisher: 2b6c9fb9c17667d36399ec9c1f5bdb9915aba683
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
@@ -64,6 +64,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
   URLNavigator: 0bffc3efdeb2d97f7b5eec7ac82d290f4a099431
 
-PODFILE CHECKSUM: e7ce6603bce8f2a65ab62bd584ef6efcbe16046b
+PODFILE CHECKSUM: 5f39df04f727cee29e79b711c87ed1a0247e474f
 
 COCOAPODS: 1.8.4

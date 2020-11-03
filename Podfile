@@ -16,7 +16,7 @@ target 'MHMoments' do
   pod 'MJRefresh', '~> 3.2'
   
 #  pod 'FakeFisher', :path => '/Users/naver/Desktop/FakeFisher/'
-  pod 'FakeFisher', '0.1.5'
+pod 'FakeFisher', '0.2.2'
 
 end
 

@@ -9,7 +9,7 @@
 import UIKit
 
 struct MHDefaultImage {
-    static let placeholder = UIImage(named: "placeholder.jpg")!
+    static let placeholder = UIImage(named: "placeholder")!
 }
 
 struct MHDefaultRatio {

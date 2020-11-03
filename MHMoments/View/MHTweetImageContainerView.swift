@@ -35,7 +35,7 @@ class MHTweetImageContainerView: UIView {
                                                           y: CGFloat(imageViewCount / imagesInOneRow) * (imageWidth + gapBetweenImages),
                                                           width: imageWidth,
                                                           height: imageWidth))
-                imageView.ff.setImage(urlString: images[imageViewCount])
+                imageView.ff.setImage(urlString: images[imageViewCount], placeholder: MHDefaultImage.placeholder)
                 addSubview(imageView)
             }
         }else{

@@ -16,7 +16,6 @@
 		4A5DE800233DB1FF009C67BC /* MHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7EE233DB1FE009C67BC /* MHNetworkManager.swift */; };
 		4A5DE801233DB1FF009C67BC /* MHApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7EF233DB1FE009C67BC /* MHApiProvider.swift */; };
 		4A5DE802233DB1FF009C67BC /* MHCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7F1233DB1FF009C67BC /* MHCommon.swift */; };
-		4A5DE803233DB1FF009C67BC /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A5DE7F2233DB1FF009C67BC /* placeholder.jpg */; };
 		4A5DE804233DB1FF009C67BC /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7F4233DB1FF009C67BC /* UIViewController+Toast.swift */; };
 		4A5DE806233DB1FF009C67BC /* MHUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7F7233DB1FF009C67BC /* MHUserInfoModel.swift */; };
 		4A5DE807233DB1FF009C67BC /* NavigationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DE7F9233DB1FF009C67BC /* NavigationMap.swift */; };
@@ -71,7 +70,6 @@
 		4A5DE7EE233DB1FE009C67BC /* MHNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHNetworkManager.swift; sourceTree = "<group>"; };
 		4A5DE7EF233DB1FE009C67BC /* MHApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHApiProvider.swift; sourceTree = "<group>"; };
 		4A5DE7F1233DB1FF009C67BC /* MHCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHCommon.swift; sourceTree = "<group>"; };
-		4A5DE7F2233DB1FF009C67BC /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		4A5DE7F4233DB1FF009C67BC /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		4A5DE7F7233DB1FF009C67BC /* MHUserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHUserInfoModel.swift; sourceTree = "<group>"; };
 		4A5DE7F9233DB1FF009C67BC /* NavigationMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMap.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				4A5DE7C3233DB1BA009C67BC /* Main.storyboard */,
 				4A5DE7C6233DB1BA009C67BC /* Assets.xcassets */,
 				4A5DE7C8233DB1BA009C67BC /* LaunchScreen.storyboard */,
-				4A5DE7F2233DB1FF009C67BC /* placeholder.jpg */,
 				4A5DE7CB233DB1BA009C67BC /* Info.plist */,
 				4A9DFE3F2340AEF8005766C3 /* MHMoments-Bridging-Header.h */,
 			);
@@ -387,7 +384,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A5DE7CA233DB1BA009C67BC /* LaunchScreen.storyboard in Resources */,
-				4A5DE803233DB1FF009C67BC /* placeholder.jpg in Resources */,
 				4A5DE7C7233DB1BA009C67BC /* Assets.xcassets in Resources */,
 				4A5DE7C5233DB1BA009C67BC /* Main.storyboard in Resources */,
 			);
@@ -755,7 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.com.MHMomentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHMoments.app/MHMoments";
 			};
@@ -773,7 +769,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.com.MHMomentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHMoments.app/MHMoments";
 			};
@@ -789,7 +785,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.com.MHMomentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MHMoments;
 			};
@@ -805,7 +801,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.navercorp.com.MHMomentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MHMoments;
 			};
